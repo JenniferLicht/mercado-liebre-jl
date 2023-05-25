@@ -1,0 +1,311 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+   /* background-color: #EBEBEB;*/
+}
+
+header {
+    background-color: #EAC926;
+}
+
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.logo {
+    width: 50%;
+    padding: 10px;
+}
+
+.buscador {
+    width: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+header p {
+    text-align: center;
+}
+
+header nav {
+    display: none;
+}
+
+header nav ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+
+}
+
+header nav ul li {
+    list-style-type: none;
+
+}
+
+header nav ul {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 42%;
+}
+
+header .buscador .input {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #666;
+}
+
+header .buscador .lupa i {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #666;
+}
+
+header div.burger-menu i {
+    color: #fff;
+    background-color: #1259c3;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 5px;
+}
+
+header div.burger-menu {
+    text-align: center;
+}
+
+header {
+    width: 100vw;
+}
+
+
+.banner-img {
+    width: 100vw;
+}
+
+main {
+    margin: 0 auto;
+    width: 90vw;
+}
+
+article {
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: content-box;
+    transition: all 0.5s;
+}
+
+main section h3 {
+    margin: 1%;
+}
+
+main section article {
+    margin-bottom: 10px;
+}
+
+main section article img {
+    width: 100%;
+}
+
+.info-article {
+    background-color: #FFF;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70px;
+}
+
+.precio {
+    width: 30%;
+
+}
+
+.descuento {
+    width: 70%;
+    color: #39b54a;
+
+}
+
+main section article div i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    color: #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 0.5s;
+}
+
+.desc-prod {
+    display: none;
+}
+
+.desc-prod {
+    transition: all 0.5s;
+}
+
+body footer {
+    background-color: #fff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+footer section {
+    text-align: center;
+    padding: 3%;
+}
+
+footer section i {
+    color: #1259c3;
+    width: 2em;
+    margin-bottom: 10px;
+} 
+
+#formulario-registro {
+    background-color: #ebebeb;
+}
+
+.formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.formularios div{
+    position: center;
+    margin-bottom: 10px;
+    border-radius: 5%;
+    /*width: 100%;*/
+}
+
+/*form div {
+    margin-bottom: 10px;
+    border-radius: 5%;
+    width: 100%;
+}*/
+
+.text-field {
+    padding: 5px;
+} 
+
+
+/*main form div input.nacimiento{
+    width: 54%;
+    margin-top: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+}*/
+
+.selecciones {
+    display: flex;
+    flex-direction: column;
+}
+
+.selecciones .perfilDeUsuario  {
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.selecciones .perfilDeUsuario div {
+    margin: 5px;
+}
+
+.botonForm {
+    width: 100%;
+}
+
+.botonSubmit {
+    background-color: green;
+    color: #FFF;
+}
+
+.botonReset {
+    background-color: red;
+    color: #FFF;
+}
+
+.formLogIn {
+    width: 250px;
+}
+main .formularios .formLogIn input {
+    width: 150%;
+    /*text-align: left;
+    padding-left: 20px;*/
+}
+
+main .formularios .formLogIn button {
+    width: 150%;
+   /* text-align: center;*/
+ 
+}
+
+@media (min-width: 361px) {
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .desc-prod {
+        display: block;
+    }
+    main section article {
+        /*box-shadow : 0px 0px 10px rgb(100, 100, 100 );*/
+        width: 45%;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    header div.burger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    main section article {
+        width: 22.5%;
+    }
+    header nav ul li a {
+        font-size: 18px;
+    }
+    .desc-prod {
+        display: none;
+    }
+    article:hover .desc-prod {
+        display: block;
+    }
+    article:hover {
+        box-shadow : 0px 0px 10px rgb(100, 100, 100);
+    }
+    article:hover i {
+        transform: rotate(-90deg);
+    }
+
+}
+
