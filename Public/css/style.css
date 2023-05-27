@@ -173,12 +173,23 @@ body footer {
 
 }
 
-footer section {
+.footer-container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+footer section{
+    text-align: center;
+    padding: 3%;
+}
+
+#copyright{
     text-align: center;
     padding: 3%;
     width: 27%;
-    margin: auto;
-
 }
 
 footer section i {
