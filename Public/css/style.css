@@ -47,7 +47,9 @@ header nav ul li a {
 }
 
 header nav ul li {
+    width: auto;
     list-style-type: none;
+    margin-bottom: 5%;
 
 }
 
@@ -166,13 +168,17 @@ body footer {
     background-color: #fff;
     padding-top: 5%;
     padding-bottom: 5%;
-    margin-top: 10%;
+    /*margin-top: 5%;*/
     margin-bottom: 10%;
+
 }
 
 footer section {
     text-align: center;
     padding: 3%;
+    width: 27%;
+    margin: auto;
+
 }
 
 footer section i {
@@ -261,6 +267,7 @@ main .formularios .formLogIn input {
 
 main .formularios .formLogIn button {
     width: 150%;
+    height: 35px;
    /* text-align: center;*/
  
 }
@@ -305,6 +312,9 @@ main .formularios .formLogIn button {
     }
     article:hover i {
         transform: rotate(-90deg);
+    }
+    main .formularios .formLogIn button:hover {
+        background-color: #0022AA;
     }
 
 }
